@@ -20,7 +20,5 @@
     "webpack-dev-server": "3.9.0",
     "write-file-webpack-plugin": "4.5.1"
   },
-  "dependencies": {
-    "tone": "^14.7.77"
-  }
+  "dependencies": {}
 }

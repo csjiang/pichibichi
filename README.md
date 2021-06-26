@@ -1,6 +1,11 @@
 # pichibichi
 Pitch shifting on HTML5 media elements so you can sing along.
 
+## TODO
+* set up server with https://github.com/jameskyburz/youtube-audio-stream
+* pass audio buffer to AudioPlayer module ref https://hackernoon.com/how-to-build-an-audio-processor-in-your-browser-302cb7aa502a 
+* 
+
 # Chrome Extension Webpack Boilerplate
 
 A basic foundation boilerplate for rich Chrome Extensions using [Webpack](https://webpack.github.io/) to help you write modular and modern Javascript code, load CSS easily and [automatic reload the browser on code changes](https://webpack.github.io/docs/webpack-dev-server.html#automatic-refresh).

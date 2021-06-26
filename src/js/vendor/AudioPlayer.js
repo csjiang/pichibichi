@@ -1,12 +1,12 @@
-const {SimpleFilter, SoundTouch} = require('../vendor/soundtouch');
+const {SimpleFilter, SoundTouch} = require('./soundtouch');
 
 const BUFFER_SIZE = 4096;
 
 class AudioPlayer {
-    constructor({emitter, pitch, tempo}) {
+    constructor({emitter, pitch, tempo, context }) {
         this.emitter = emitter;
 
-        this.context = new AudioContext();
+        this.context = context;
         this.scriptProcessor = this.context.createScriptProcessor(BUFFER_SIZE, 2, 2);
         this.scriptProcessor.onaudioprocess = e => {
             const l = e.outputBuffer.getChannelData(0);
