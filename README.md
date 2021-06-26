@@ -1,5 +1,17 @@
 # pichibichi
-Pitch shifting on HTML5 media elements so you can sing along.
+Pitch shifting on HTML5 media elements so you can sing along in the key of your choice.
+
+## Install
+* Download and unzip the latest [release](https://github.com/csjiang/pichibichi/releases).
+* [Follow step 2](https://support.google.com/chrome/a/answer/2714278?hl=en) to load custom extension from the `build` subdir of the downloaded release. (Chrome web store submission pending.)
+* Navigate to a page with only one HTML5 video element (e.g. YouTube).
+* Click on the pichibichi icon in the extensions toolbar and select the number of semitones up or down you'd like to transpose, then click on "Apply" button to apply the change. While the popup/dropdown menu is open from the extensions toolbar you can shift up/down as much as you want. Once this menu is closed, to shift again you will need to reload the page.
+
+## TODO
+* Persist state so that you can shift multiple times after closing extension popup window without reloading the page.
+* Add semitone calculator - user inputs original key and desired key, and semitones to shift up/down are calculated. 
+* On pages with multiple HTML5 video elements, accept user selection for element to shift pitch for.
+* Move to soundtouch JS library for smoother pitch shifting (requires extraction of AudioBuffer).
 
 # Chrome Extension Webpack Boilerplate
 
